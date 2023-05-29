@@ -26,6 +26,8 @@ $ mkdir root_jupyter
 $ docker compose up --build
 ```
 
+終了する際は `Ctrl + C` を２回入力。
+
 # Jupyter Lab 接続方法
 
 上記コマンドで起動するとコンソールに `127.0.0.1:8888` を含むURLが出てくるので
@@ -38,5 +40,5 @@ $ docker compose up --build
 $ docker compose up
 
 # 終了
-$ docker compose stop
+# Ctrl + C を2回入力
 ```
