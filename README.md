@@ -20,6 +20,7 @@ ds_default/
 
 ```
 $ git clone git@github.com:DS-Salinger/ds_default.git
+$ cd ds_default
 $ mkdir opt
 $ mkdir root_jupyter
 $ docker compose up --build
