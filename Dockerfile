@@ -23,6 +23,7 @@ RUN apt-get install -y \
     zip \
     unzip \    
     python-is-python3 \
+    libgl1-mesa-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
     
@@ -40,9 +41,11 @@ RUN pip install --ignore-installed \
     seaborn \
     plotly \
     opencv-python \
+    pillow \
     graphviz \
     shap \
     xgboost \
     lightgbm \
     catboost \
-    tqdm
+    tqdm \
+    tabula-py
