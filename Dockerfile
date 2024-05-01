@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM --platform=linux/arm64/v8 ubuntu:22.04
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get install -y \
@@ -16,7 +16,7 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-cache policy python3.9
 
 RUN apt-get install -y \
-    python3.9 \
+    python3.10 \
     python3-pip \
     git \
     wget \
@@ -48,4 +48,5 @@ RUN pip install --ignore-installed \
     lightgbm \
     catboost \
     tqdm \
-    tabula-py
+    tabula-py \
+    optuna-integration

@@ -1,5 +1,6 @@
 root_jupyter/
 opt/
+.DS_Store
 
 # -*- mode: gitignore; -*-
 *~
